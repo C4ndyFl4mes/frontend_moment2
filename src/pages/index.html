@@ -3,9 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <script src="../scripts/main.js" type="module"></script>
+    <title>Startsida</title>
 </head>
 <body>
-    
+    <header></header>
+    <main>
+        <h1>Webbutveckling - Ramschema</h1>
+        <label>
+            <span>Sök:</span>
+            <input type="text" id="search" placeholder="Sök efter kurskod eller kursnamn">
+        </label>
+        <table>
+            <thead>
+                <tr>
+                    <th>Kurskod</th>
+                    <th>Namn</th>
+                    <th>Progression</th>
+                </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+        </table>
+    </main>
+    <footer></footer>
 </body>
 </html>
