@@ -1,1 +1,1 @@
-{"mappings":"","sources":[],"sourcesContent":[],"names":[],"version":3,"file":"index.ebeadb08.css.map","sourceRoot":"/__parcel_source_root/"}
+{"mappings":"AAAA;;;;;AAIA;;;;;AAKA","sources":["src/styles/index.css"],"sourcesContent":["table {\r\n    width: 90%;\r\n    max-width: 900px;\r\n}\r\ntr {\r\n    display: grid;\r\n    grid-template-columns: 20% auto 20%;\r\n}\r\n\r\nth {\r\n    display: flex;\r\n    flex-direction: column;\r\n    text-align: center;\r\n}\r\n"],"names":[],"version":3,"file":"index.ebeadb08.css.map","sourceRoot":"/__parcel_source_root/"}
