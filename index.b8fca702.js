@@ -596,6 +596,9 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"3cYfC":[function(require,module,exports,__globalThis) {
+// För roboto font från Google Fonts.
+var _roboto = require("@fontsource/roboto");
+var _700Css = require("@fontsource/roboto/700.css");
 const searchINPUT = document.getElementById("search"); // Deklarerar sökfältets element.
 const sortCodeBTN = document.getElementById("sort-code");
 const sortCourseNameBTN = document.getElementById("sort-coursename");
@@ -693,6 +696,6 @@ function renderTableContent(data) {
     });
 }
 
-},{}]},["k51Nd","3cYfC"], "3cYfC", "parcelRequire94c2")
+},{"@fontsource/roboto":"jgvpq","@fontsource/roboto/700.css":"4mrIr"}],"jgvpq":[function() {},{}],"4mrIr":[function() {},{}]},["k51Nd","3cYfC"], "3cYfC", "parcelRequire94c2")
 
 //# sourceMappingURL=index.b8fca702.js.map

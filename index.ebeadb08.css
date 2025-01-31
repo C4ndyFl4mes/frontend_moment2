@@ -1,16 +1,96 @@
-table {
+body {
+  background-color: #fafff3;
+  margin: 0;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+header {
+  background-color: #73ff73;
+  align-items: center;
+  height: 4rem;
+  padding-left: 2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+}
+
+header > p {
+  margin: 0;
+}
+
+main {
   width: 90%;
   max-width: 900px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
 }
 
 tr {
+  user-select: none;
   grid-template-columns: 20% auto 20%;
   display: grid;
+}
+
+tr:has(td) {
+  border-bottom: 1px solid #000;
+  border-radius: 5px;
+  min-height: 2rem;
+}
+
+tr:has(td):hover {
+  background-color: #51ff51;
+  min-height: 2.2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  box-shadow: 1px 0 10px #000;
+}
+
+tr:has(th) {
+  margin-bottom: 1rem;
+}
+
+tr > * {
+  align-self: center;
 }
 
 th {
   text-align: center;
   flex-direction: column;
   display: flex;
+}
+
+label {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: .5rem;
+  display: flex;
+}
+
+#search {
+  min-width: 50%;
+  height: 2rem;
+  margin-left: .5rem;
+}
+
+.button {
+  cursor: pointer;
+  width: auto;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #73ff73;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: .5rem;
+  display: flex;
+}
+
+footer > article {
+  flex: 1;
 }
 /*# sourceMappingURL=index.ebeadb08.css.map */
