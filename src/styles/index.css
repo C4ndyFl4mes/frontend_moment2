@@ -1,14 +1,116 @@
-table {
+body {
+    margin: 0;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+
+    background-color: rgb(250, 255, 243);
+}
+
+/* The header of the page. */
+header {
+    height: 4rem;
+
+    padding-left: 2rem;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    background-color: rgb(115, 255, 115);
+
+    display: flex;
+    align-items: center;
+}
+
+header>p {
+    margin: 0;
+}
+
+/* Dynamic and reponsive size. */
+main {
     width: 90%;
     max-width: 900px;
+    min-height: 100vh;
+    margin: 0 auto;
 }
+/* The table is 100% the with of the main. */
+table {
+    width: 100%;
+}
+
+/* All rows and their column width. */
 tr {
     display: grid;
     grid-template-columns: 20% auto 20%;
+    user-select: none;
 }
 
+/* The common rows (not the headers th). */
+tr:has(td) {
+    min-height: 2rem;
+    border-bottom: 1px solid black;
+    border-radius: 5px;
+}
+
+/* On hover it sets an shadow and greenish background. */
+tr:has(td):hover {
+    background-color: rgb(81, 255, 81);
+    box-shadow: 1px 0px 10px black;
+    min-height: 2.2rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+/* To distinguish the header row from the common rows. */
+tr:has(th) {
+    margin-bottom: 1rem;
+}
+
+/* The text to be centered vertically in each cell, both th and td.  */
+tr>* {
+    align-self: center;
+}
+
+/* The headers for each column in the table. */
 th {
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+
+/* The label around the search field. */
+label {
+    margin-bottom: 0.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* The search field. */
+#search {
+    height: 2rem;
+    margin-left: 0.5rem;
+    min-width: 50%;
+}
+
+/* The three sorting buttons. */
+.button {
+    width: auto;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+/* The footer for the page. */
+footer {
+    padding: 0.5rem;
+
+    background-color: rgb(115, 255, 115);
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+footer>article {
+    flex: 1;
 }

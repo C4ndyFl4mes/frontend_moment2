@@ -1,3 +1,7 @@
+// För roboto font från Google Fonts.
+import "@fontsource/roboto";
+import "@fontsource/roboto/700.css";
+
 const searchINPUT = document.getElementById("search"); // Deklarerar sökfältets element.
 const sortCodeBTN = document.getElementById("sort-code");
 const sortCourseNameBTN = document.getElementById("sort-coursename");
